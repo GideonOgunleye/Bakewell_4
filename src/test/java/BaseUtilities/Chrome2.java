@@ -1,6 +1,10 @@
 package BaseUtilities;
 
 import org.testng.annotations.Test;
+
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+
 import org.testng.annotations.BeforeTest;
 
 import java.io.FileInputStream;
@@ -23,11 +27,10 @@ import org.testng.annotations.BeforeMethod;
 public class Chrome2 {
 	
 	
-	public WebDriver driver;
+	protected static WebDriver driver ;
 	
 
-
-  @BeforeMethod (groups = {"Sanity","SQL","Regression","Smoke"} )
+  @Before 
   public void beforeTest() throws IOException  {
 	
  	 
@@ -46,7 +49,7 @@ public class Chrome2 {
    
   }
 
-  @AfterMethod (groups = {"Sanity","SQL","Regression","Smoke"})
+  @After 
   public void afterTest() throws Exception {
 	  
 	  Thread.sleep(1000);

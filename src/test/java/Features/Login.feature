@@ -2,16 +2,13 @@
 Feature: Login Functionality
 Description: This feature is to test the login functionality
 
-Scenario: Verification of Reset button
+Scenario: Verification of ValidLogin Process
 
-	Given Users is on Home Page
-	When Users enters Username and Password
-	When Clicks Go button
-	Then He can visit the practice page
-	Then A message is displayed
+	Given Client is on Home Page
+	When Client enters Username and Password
+	When Clicks Login button
+	Then Myssl Dashboard is opened
 	
-	
-
 	
 
 

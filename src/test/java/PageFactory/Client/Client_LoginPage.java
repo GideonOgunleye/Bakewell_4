@@ -42,7 +42,7 @@ public class Client_LoginPage extends DriverLoad {
 	WebElement RegisterLink;
 	
 	@FindBy (name="data[User][email]")
-	public static WebElement Username;
+    WebElement Username;
 
 	@FindBy (name="data[User][password]")
 	WebElement Password;
@@ -62,6 +62,7 @@ public class Client_LoginPage extends DriverLoad {
 	public Client_LoginPage(WebDriver driver){
 		
 		this.driver = driver;
+		//PageFactory.initElements(driver, this);
 		PageFactory.initElements(new AjaxElementLocatorFactory(driver, 100), this);
 		//PageFactory.initElements(driver, this);
 		
