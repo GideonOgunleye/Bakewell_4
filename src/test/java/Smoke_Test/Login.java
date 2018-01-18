@@ -88,8 +88,8 @@ import cucumber.api.java.en.When;
 
 public class Login {
 	
-	static WebDriver driver;
-	private Local l;
+	WebDriver driver;
+	//private Local l;
 	
 	ExtentReports report;
 	ExtentTest test;
@@ -117,7 +117,7 @@ public class Login {
 	@Before
 	public void LoadElements(Scenario scenario) throws Exception {
 		
-/*	   System.setProperty("webdriver.chrome.driver", "C:\\chromedriver-2.exe");
+	   System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 	   //driver = new ChromeDriver();  
 	   //driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 
@@ -126,9 +126,9 @@ public class Login {
 	   o.addArguments("disable-extensions");
 	   o.addArguments("--start-maximized");
 	   driver = new ChromeDriver(o);
-*/		
 		
-        String USERNAME = System.getenv("developmentteam12");
+		
+/*        String USERNAME = System.getenv("developmentteam12");
         String ACCESS_KEY = System.getenv("AKNscSG2dLkmDUkzTRyJ");
         String URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@hub.browserstack.com/wd/hub";
 
@@ -141,7 +141,7 @@ public class Login {
             Map<String, String> options = new HashMap<String, String>();
             options.put("key", ACCESS_KEY);
             l.start(options);
-        }		
+        }*/		
 		
 	   report = ExtentFactory.getInstance(); 
 	   LoginPageElements = new Client_LoginPage(driver);
@@ -166,9 +166,6 @@ public class Login {
 	   DomainNamesEditPageElements = new Client_DomainNamesEditPage(driver);
 		 
 		//LoginPageElements.ClientLogin();
-		
-
-		  
 		  
 	   driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		
@@ -185,7 +182,7 @@ public class Login {
 		report.flush();
 				 
 		driver.quit();
-		if (l != null) l.stop();
+		//if (l != null) l.stop();
 		
 	}
 
@@ -238,7 +235,7 @@ public class Login {
 		  try {
 				
 				 
-			 if(driver.getTitle().contains("MySSL® » Dashboard")){
+			 if(driver.getTitle().contains("MySSLÂ® Â» Dashboard")){
 				 
 				 System.out.println("Admin User Logged In");
 				 driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);

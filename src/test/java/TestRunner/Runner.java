@@ -37,13 +37,13 @@ public class Runner extends AbstractTestNGCucumberTests {
 	
 	public WebDriver driver;
 	
-	@BeforeClass ()
+/*	@BeforeClass ()
 	  public void beforeTest() throws IOException  {
 		
 	 	 
-		  System.setProperty("webdriver.chrome.driver", "C:\\chromedriver-2.exe");
-		  //driver = new ChromeDriver();  
-		  //driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		  System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		  driver = new ChromeDriver();  
+		  driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 
 		  
 		  ChromeOptions o = new ChromeOptions();
@@ -65,6 +65,6 @@ public class Runner extends AbstractTestNGCucumberTests {
 		driver.quit();
 
 		  
-	  }
+	  }*/
 
 }

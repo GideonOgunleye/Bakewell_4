@@ -8,6 +8,7 @@ Scenario: Verification of ValidLogin Process
 	When Client enters Username and Password
 	When Clicks Login button
 	Then Myssl Dashboard is opened
+
 	
 	
 

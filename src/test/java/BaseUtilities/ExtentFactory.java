@@ -8,7 +8,7 @@ public class ExtentFactory {
 	public static ExtentReports getInstance() {
 		ExtentReports extent;
 
-		String Path = "C:\\ExtentReport\\Sanity Test.html";
+		String Path = "./test-output/Extent Report/Sanity Test.html";
 
 		extent = new ExtentReports (Path, false);
 		
@@ -20,7 +20,7 @@ public class ExtentFactory {
 	public static ExtentReports getInstance2() {
 		ExtentReports extent;
 
-		String Path = "C:\\ExtentReport\\Regression Test.html";
+		String Path = "./test-output/Extent Report/Regression Test.html";
 
 		extent = new ExtentReports (Path, false);
 		
@@ -32,7 +32,7 @@ public class ExtentFactory {
 	public static ExtentReports getInstance3() {
 		ExtentReports extent;
 
-		String Path = "C:\\ExtentReport\\Smoke Test.html";
+		String Path = "./test-output/Extent Report/Smoke Test.html";
 
 		extent = new ExtentReports (Path, false);
 		
@@ -44,7 +44,7 @@ public class ExtentFactory {
 	public static ExtentReports getInstance4() {
 		ExtentReports extent;
 
-		String Path = "C:\\ExtentReport\\IndexPageCrokenLinks Test.html";
+		String Path = "./test-output/Extent Report/IndexPageCrokenLinks Test.html";
 
 		extent = new ExtentReports (Path, false);
 		
@@ -56,7 +56,7 @@ public class ExtentFactory {
 	public static ExtentReports getInstance5() {
 		ExtentReports extent;
 
-		String Path = "C:\\ExtentReport\\MainNavBrokenLinks Test.html";
+		String Path = "./test-output/Extent Report/MainNavBrokenLinks Test.html";
 
 		extent = new ExtentReports (Path, false);
 		
@@ -68,7 +68,7 @@ public class ExtentFactory {
 	public static ExtentReports getInstance6() {
 		ExtentReports extent;
 
-		String Path = "C:\\ExtentReport\\SubNavBrokenLinks Test.html";
+		String Path = "./test-output/Extent Report/SubNavBrokenLinks Test.html";
 
 		extent = new ExtentReports (Path, false);
 		
